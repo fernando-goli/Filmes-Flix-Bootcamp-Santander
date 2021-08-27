@@ -1,4 +1,4 @@
-package com.fgomes.filmes_flix_bootcamp_santander.model
+package com.fgomes.filmes_flix_bootcamp_santander.domain
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

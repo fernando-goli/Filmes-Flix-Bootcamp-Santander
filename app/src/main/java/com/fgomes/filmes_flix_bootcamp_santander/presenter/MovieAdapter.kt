@@ -1,4 +1,4 @@
-package com.fgomes.filmes_flix_bootcamp_santander.view
+package com.fgomes.filmes_flix_bootcamp_santander.presenter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.fgomes.filmes_flix_bootcamp_santander.R
 //import kotlinx.android.synthetic.main.movie_item_layout.view.*
-import com.fgomes.filmes_flix_bootcamp_santander.model.Movie
+import com.fgomes.filmes_flix_bootcamp_santander.domain.Movie
 
 class MoviesAdapter(private val moviesList: List<Movie>): RecyclerView.Adapter<MoviesViewHolder>() {
 

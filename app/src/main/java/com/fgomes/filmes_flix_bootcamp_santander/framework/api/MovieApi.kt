@@ -1,6 +1,6 @@
-package com.fgomes.filmes_flix_bootcamp_santander.api
+package com.fgomes.filmes_flix_bootcamp_santander.framework.api
 
-import com.fgomes.filmes_flix_bootcamp_santander.model.Movie
+import com.fgomes.filmes_flix_bootcamp_santander.domain.Movie
 import retrofit2.Call
 import retrofit2.http.GET
 

@@ -1,4 +1,4 @@
-package com.fgomes.filmes_flix_bootcamp_santander.api
+package com.fgomes.filmes_flix_bootcamp_santander.framework.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

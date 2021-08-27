@@ -1,10 +1,11 @@
-package com.fgomes.filmes_flix_bootcamp_santander.repository
+package com.fgomes.filmes_flix_bootcamp_santander.implementations
 
 import android.util.Log
-import com.fgomes.filmes_flix_bootcamp_santander.api.MovieRestApiTask
-import com.fgomes.filmes_flix_bootcamp_santander.model.Movie
+import com.fgomes.filmes_flix_bootcamp_santander.framework.api.MovieRestApiTask
+import com.fgomes.filmes_flix_bootcamp_santander.data.MovieDataSource
+import com.fgomes.filmes_flix_bootcamp_santander.domain.Movie
 
-class MovieRepository(private val movieRestApiTask: MovieRestApiTask) {
+class MovieDataSourceImplementations(private val  movieRestApiTask: MovieRestApiTask): MovieDataSource {
 
     companion object {
         const val TAG = "MovieRepository"
@@ -12,8 +13,7 @@ class MovieRepository(private val movieRestApiTask: MovieRestApiTask) {
 
     private val movieList = arrayListOf<Movie>()
 
-    fun getAllMovies(): List<Movie>{
-
+    override fun getAllMovies(): List<Movie> {
         val request = movieRestApiTask.retrofitApi().getAllMovies().execute()
 
         if (request.isSuccessful){
@@ -29,5 +29,4 @@ class MovieRepository(private val movieRestApiTask: MovieRestApiTask) {
 
         return movieList
     }
-
 }
