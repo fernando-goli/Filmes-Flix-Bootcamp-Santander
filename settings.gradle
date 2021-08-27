@@ -1,0 +1,2 @@
+rootProject.name = "Filmes-Flix-Bootcamp-Santander"
+include ':app'
