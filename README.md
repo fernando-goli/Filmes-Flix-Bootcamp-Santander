@@ -1,6 +1,6 @@
 # Filmes-Flix-Bootcamp-Santander
 
-Projeto criado para o módulo de MVVM e Clean Architecture no Bootcamp Kotlin Everis da DIO.
+Projeto criado para o módulo de MVVM e Clean Architecture no Bootcamp Kotlin Santander da DIO.
 
 Este projeto consiste em exibir uma lista de filmes, oriundas de uma API. 
 
